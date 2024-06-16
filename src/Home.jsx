@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import ChartLists from './component/ChartLists';
 import Overview from './component/Overview';
 
+const BACKEND_URL = "http://localhost:8000/api"
 
 const Home = React.forwardRef((props, ref) => {
   const [charts, setCharts] = useState([]);
@@ -12,7 +13,7 @@ const Home = React.forwardRef((props, ref) => {
 
   const fetchOverview = async () => {
     try {
-      const res = await fetch('http://localhost:8000/overview');
+      const res = await fetch(`${BACKEND_URL}/overview`);
       const data = await res.json();
       setComsumptions(data);
     } catch (e) {
@@ -22,7 +23,7 @@ const Home = React.forwardRef((props, ref) => {
 
   const fetchChartDetailData = async () => {
     try {
-      const res = await fetch('http://localhost:8000/data-report');
+      const res = await fetch(`${BACKEND_URL}/data-report`);
       const data = await res.json();
       setCharts(data);
     } catch (e) {
@@ -32,7 +33,7 @@ const Home = React.forwardRef((props, ref) => {
   
   const fetchAnomalies = async () => {
     try {
-      const res = await fetch('http://localhost:8000/anomalies');
+      const res = await fetch(`${BACKEND_URL}/anomalies`);
       const data = await res.json();
       setAnomalies(data);
     } catch (e) {
