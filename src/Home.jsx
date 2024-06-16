@@ -19,7 +19,6 @@ function Home() {
   const onOverview = (e) => {
     e.preventDefault();
     fetchChartDetailData()
-    setCharts(["ddd"])
     setShowChartList(true);
  }
 
