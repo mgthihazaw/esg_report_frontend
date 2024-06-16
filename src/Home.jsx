@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import ChartLists from './component/ChartLists';
 import Overview from './component/Overview';
 
@@ -6,6 +7,18 @@ import Overview from './component/Overview';
 const Home = React.forwardRef((props, ref) => {
   const [charts, setCharts] = useState([]);
   const [showChartList,setShowChartList] = useState(false)
+  const [consumptions,setComsumptions] = useState([])
+  const [anomalies,setAnomalies] = useState([])
+
+  const fetchOverview = async () => {
+    try {
+      const res = await fetch('http://localhost:8000/overview');
+      const data = await res.json();
+      setComsumptions(data);
+    } catch (e) {
+      console.log(e)
+    }
+  }
 
   const fetchChartDetailData = async () => {
     try {
@@ -16,10 +29,26 @@ const Home = React.forwardRef((props, ref) => {
       console.log(e)
     }
   }
+  
+  const fetchAnomalies = async () => {
+    try {
+      const res = await fetch('http://localhost:8000/anomalies');
+      const data = await res.json();
+      setAnomalies(data);
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+
+  useEffect(() => {
+    fetchOverview()
+  }, []);
 
   const onOverview = (e) => {
     e.preventDefault();
-    fetchChartDetailData()
+    fetchChartDetailData();
+    fetchAnomalies()
     setShowChartList(true);
  }
 
@@ -34,8 +63,8 @@ const Home = React.forwardRef((props, ref) => {
       </div>
 
       <div className="dashboard" ref={ref}>
-        <Overview onOverviewHandler={onOverview} />
-        { showChartList ? <ChartLists dataChartLists={charts} /> : <></> }
+        <Overview onOverviewHandler={onOverview} consumptions={consumptions}/>
+        { showChartList ? <ChartLists dataChartLists={charts} anomalies={anomalies}/> : <></> }
       </div>
     </main>
   )

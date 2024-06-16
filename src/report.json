@@ -1,36 +1,273 @@
-{ 
-    "data-report" : {
-        "anomalies": [
-            {
-                "name" : "Laptop Charger",
-                "status": true,
-                "date" : "21/04/2023 18:39"
-            },
-            {
-                "name" : "Laptop Charger",
-                "status": true,
-                "date" : "21/04/2023 18:39"
-            },
-            {
-                "name" : "Laptop Charger",
-                "status": true,
-                "date" : "21/04/2023 18:39"
-            },
-            {
-                "name" : "Laptop Charger",
-                "status": true,
-                "date" : "21/04/2023 18:39"
-            },
-            {
-                "name" : "Laptop Charger",
-                "status": true,
-                "date" : "21/04/2023 18:39"
-            }
-          ],
-        "electricity" : 1.007,
-        "waterusages" : 50,
-        "waterlevels" : ["1.0000", "0.1200", "0.1000", "0.8000", "0.9000", "0.6000", "0.5000","1.0000", "0.1200", "0.1000", "0.8000", "0.9000", "0.6000", "0.5000"]
-    }
-    
-    
+{
+    "data-report": [
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "10:00"
+        },
+        {
+            "electricity": 0.5,
+            "waterusages": 7,
+            "waterlevels": "1.0000",
+            "time": "11:00"
+        },
+        {
+            "electricity": 0.3,
+            "waterusages": 7,
+            "waterlevels": "1.5000",
+            "time": "12:00"
+        },
+        {
+            "electricity": 0.6,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "13:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "0.6000",
+            "time": "14:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.8000",
+            "time": "15:00"
+        },
+        {
+            "electricity": 0.8,
+            "waterusages": 15,
+            "waterlevels": "1.0000",
+            "time": "16:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "17:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "18:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "19:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "20:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "21:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "22:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "23:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "24:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "1:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "2:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "3:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "4:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "1:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "5:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "6:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "7:00"
+        },
+        {
+            "electricity": 0.2,
+            "waterusages": 10,
+            "waterlevels": "1.0000",
+            "time": "8:00"
+        }
+    ],
+    "overview": [
+        {
+            "consumption": 0.2,
+            "time": "10:00"
+        },
+        {
+            "consumption": 0.5,
+            "time": "11:00"
+        },
+        {
+            "consumption": 0.3,
+            "time": "12:00"
+        },
+        {
+            "consumption": 0.6,
+            "time": "13:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "14:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "15:00"
+        },
+        {
+            "consumption": 0.8,
+            "time": "16:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "17:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "18:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "19:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "20:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "21:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "22:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "23:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "24:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "1:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "2:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "3:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "4:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "1:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "5:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "6:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "7:00"
+        },
+        {
+            "consumption": 0.2,
+            "time": "8:00"
+        }
+    ],
+    "anomalies": [
+        {
+            "name": "Laptop Charger",
+            "status": true,
+            "date": "21/04/2023 18:39"
+        },
+        {
+            "name": "Laptop Charger",
+            "status": true,
+            "date": "21/04/2023 18:39"
+        },
+        {
+            "name": "Laptop Charger",
+            "status": true,
+            "date": "21/04/2023 18:39"
+        },
+        {
+            "name": "Laptop Charger",
+            "status": true,
+            "date": "21/04/2023 18:39"
+        },
+        {
+            "name": "Laptop Charger",
+            "status": true,
+            "date": "21/04/2023 18:39"
+        }
+    ]
 }

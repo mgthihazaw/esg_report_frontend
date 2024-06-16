@@ -4,14 +4,14 @@ import EnergyMeterChart from './graph/EnergyMeterChart';
 import WaterLevelChart from './graph/WaterLevelChart';
 import WaterUsage from './graph/WaterUsage';
 
-const ChartLists = ({ dataChartLists }) => {
+const ChartLists = ({ dataChartLists, anomalies }) => {
 
     return (
         <>
-            <EnergyMeterChart electricityUnit={dataChartLists.electricity}/>
-            <WaterLevelChart waterLevels={dataChartLists.waterlevels}/>
-            <Anomalities dataAnomalities={dataChartLists.anomalies}/>
-            <WaterUsage waterPercentage={dataChartLists.waterusages}/>
+            <EnergyMeterChart electricityUnit={dataChartLists} />
+            <WaterLevelChart waterLevels={dataChartLists} />
+            <WaterUsage waterPercentage={dataChartLists} />
+            <Anomalities dataAnomalities={anomalies}/>
         </>
     )
 }
