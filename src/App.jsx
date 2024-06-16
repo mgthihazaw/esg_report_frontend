@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './component/Header'
 import Sidebar from './component/Sidebar'
-import Home from './Home'
+import HomePage from './HomePage';
 
 function App() {
   
@@ -11,7 +11,7 @@ function App() {
     <div className='grid-container'>
       <Header/>
       <Sidebar/>
-      <Home />
+      <HomePage/>
     </div>
   )
 }

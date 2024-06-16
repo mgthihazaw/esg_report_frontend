@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import ChartLists from './component/ChartLists';
 import Overview from './component/Overview';
 
-function Home() {
+
+const Home = React.forwardRef((props, ref) => {
   const [charts, setCharts] = useState([]);
   const [showChartList,setShowChartList] = useState(false)
 
@@ -23,20 +24,21 @@ function Home() {
  }
 
   return (
-    <main className='main-container'>
+    <main className='main-container' >
       <div className='main-title'>
         <div>
           <span className="title">Report</span>
           <span className="breadcrumb">Home / Report</span>
         </div>
+        <div><button className='printBtn' onClick={props.handlePrint}>Print</button></div>
       </div>
 
-      <div className="dashboard">
+      <div className="dashboard" ref={ref}>
         <Overview onOverviewHandler={onOverview} />
         { showChartList ? <ChartLists dataChartLists={charts} /> : <></> }
       </div>
     </main>
   )
-}
+});
 
 export default Home
