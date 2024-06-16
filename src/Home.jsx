@@ -30,7 +30,7 @@ const Home = React.forwardRef((props, ref) => {
           <span className="title">Report</span>
           <span className="breadcrumb">Home / Report</span>
         </div>
-        <div><button className='printBtn' onClick={props.handlePrint}>Print</button></div>
+        <div>{ showChartList ? <button className='printBtn' onClick={props.handlePrint}>Print</button> : <></> }</div>
       </div>
 
       <div className="dashboard" ref={ref}>
