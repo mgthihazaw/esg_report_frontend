@@ -5,18 +5,13 @@ import WaterLevelChart from './graph/WaterLevelChart';
 import WaterUsage from './graph/WaterUsage';
 
 const ChartLists = ({ dataChartLists }) => {
+
     return (
         <>
-            {dataChartLists.length >= 0 ?
-                (<>
-                    <EnergyMeterChart />
-                    <WaterLevelChart />
-                    <Anomalities />
-                    <WaterUsage />
-                </>)
-                :
-                <></>
-            }
+            <EnergyMeterChart />
+            <WaterLevelChart />
+            <Anomalities />
+            <WaterUsage />
         </>
     )
 }

@@ -3,6 +3,7 @@ import Anomalities from './graph/Anomalities';
 import ChartComponent from './graph/ChartComponent';
 
 const Overview = ({ onOverviewHandler }) => {
+
     return (
         <div className="card overview">
             <div className="esg-readings">

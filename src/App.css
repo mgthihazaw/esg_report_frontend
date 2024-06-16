@@ -217,7 +217,9 @@ body {
 .overview .esg-readings{
   width: 100%;
   height: 300px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .esg-button{
@@ -399,7 +401,7 @@ td {
 }
 
 .title {
-  color: #e74c3c;
+  color: #3ca8e7;
   font-weight: bold;
 }
 
@@ -426,5 +428,19 @@ td {
   display: flex; /* or inline-flex */
   align-items: center; 
   justify-content: center;
+}
+
+.electric{
+  width: 200px;
+  height: 200px;
+  color: rgba(53, 162, 235, 0.5);
+  display: flex; /* or inline-flex */
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.electric .electric-icon .icon{
+  font-size: 50px;
 }
 

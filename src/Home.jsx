@@ -3,12 +3,26 @@ import ChartLists from './component/ChartLists';
 import Overview from './component/Overview';
 
 function Home() {
-  const [charts,setCharts] = useState([]);
+  const [charts, setCharts] = useState([]);
+  const [showChartList,setShowChartList] = useState(false)
 
+  const fetchChartDetailData = async () => {
+    try {
+      const res = await fetch('/api/chart-detail');
+      const data = await res.json();
+      setCharts(data);
+    } catch (e) {
+      console.log(e)
+    }
+  }
 
-  const onOverview = (event) => {
-    console.log("onClickOverview")
-  };
+  const onOverview = (e) => {
+    e.preventDefault();
+    //fetchChartDetailData()
+    setCharts(["ddd"])
+    setShowChartList(true);
+ }
+
   return (
     <main className='main-container'>
       <div className='main-title'>
@@ -19,8 +33,8 @@ function Home() {
       </div>
 
       <div className="dashboard">
-        <Overview onOverviewHandler={onOverview}/>
-        <ChartLists dataChartLists={charts}/>
+        <Overview onOverviewHandler={onOverview} />
+        { showChartList ? <ChartLists dataChartLists={charts} /> : <></> }
       </div>
     </main>
   )
