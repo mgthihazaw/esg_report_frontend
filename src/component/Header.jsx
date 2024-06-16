@@ -1,6 +1,6 @@
 import React from 'react'
 import 
- {BsPersonCircle, BsSearch, BsJustify}
+ {BsPersonCircle, BsJustify}
  from 'react-icons/bs'
 
 function Header() {
@@ -10,7 +10,6 @@ function Header() {
             <BsJustify className='icon'/>
         </div>
         <div className='header-left'>
-            <BsSearch  className='icon'/>
         </div>
         <div className='header-right'>
             <BsPersonCircle className='icon'/>
