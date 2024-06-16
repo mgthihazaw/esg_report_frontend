@@ -1,4 +1,5 @@
 import React from 'react';
+import Anomalities from './graph/Anomalities';
 import ChartComponent from './graph/ChartComponent';
 
 const Overview = ({ onOverviewHandler }) => {
