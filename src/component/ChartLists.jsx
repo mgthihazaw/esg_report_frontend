@@ -8,10 +8,10 @@ const ChartLists = ({ dataChartLists }) => {
 
     return (
         <>
-            <EnergyMeterChart />
-            <WaterLevelChart />
-            <Anomalities />
-            <WaterUsage />
+            <EnergyMeterChart electricityUnit={dataChartLists.electricity}/>
+            <WaterLevelChart waterLevels={dataChartLists.waterlevels}/>
+            <Anomalities dataAnomalities={dataChartLists.anomalies}/>
+            <WaterUsage waterPercentage={dataChartLists.waterusages}/>
         </>
     )
 }

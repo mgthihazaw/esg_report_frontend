@@ -8,7 +8,7 @@ function Home() {
 
   const fetchChartDetailData = async () => {
     try {
-      const res = await fetch('/api/chart-detail');
+      const res = await fetch('http://localhost:8000/data-report');
       const data = await res.json();
       setCharts(data);
     } catch (e) {
@@ -18,7 +18,7 @@ function Home() {
 
   const onOverview = (e) => {
     e.preventDefault();
-    //fetchChartDetailData()
+    fetchChartDetailData()
     setCharts(["ddd"])
     setShowChartList(true);
  }

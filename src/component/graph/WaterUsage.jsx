@@ -1,7 +1,7 @@
 import React from 'react'
 
 const WaterUsage = ({waterPercentage}) => {
-    waterPercentage = 50;
+  
   return (
     <>
     <div className="card carbon-footprint">

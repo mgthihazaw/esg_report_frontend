@@ -2,7 +2,7 @@ import React from 'react';
 import BarChart from '../charts/BarChart';
 
 const WaterLevelChart = ({ waterLevels}) => {
-    waterLevels = ['1.0000', '0.1200', '0.1000', '0.8000', '0.9000', '0.6000', '0.5000'];
+    
 
     const options = {
         responsive: true,
