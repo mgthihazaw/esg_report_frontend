@@ -1,4 +1,3 @@
-// PdfGenerator.js
 import React, { useRef } from 'react';
 import { useReactToPrint } from 'react-to-print';
 import Home from './Home';
